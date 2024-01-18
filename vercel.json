@@ -1,6 +1,7 @@
 {
     "buildCommand": "pnpm build",
     "installCommand": "pnpm install && pnpm install pg --save",
+    "outputDirectory": "dist",
     "version": 2,
     "routes": [
         {
