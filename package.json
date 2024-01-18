@@ -8,6 +8,9 @@
     "dev": "nodemon src/index.ts",
     "build": "esbuild src/index.ts --platform=node --bundle --minify --outfile=dist/index.js"
   },
+  "pre-commit": [
+    "build"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,6 +20,7 @@
     "@types/node": "^20.11.5",
     "@types/pg": "^8.10.9",
     "nodemon": "^3.0.3",
+    "pre-commit": "^1.2.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
